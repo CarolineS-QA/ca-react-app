@@ -1,11 +1,11 @@
 import React from 'react';
 // import logo from './logo.svg';
 import './App.css';
-import MyComponent from './Components/MyComponent';
+import TopComponent from './Components/TopComponent';
 
 function App() {
   return (
-    <MyComponent />
+    <TopComponent />
     // <div className="App">
     //   <header className="App-header">
     //     <img src={logo} className="App-logo" alt="logo" />
