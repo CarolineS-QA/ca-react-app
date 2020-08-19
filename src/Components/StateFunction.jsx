@@ -11,7 +11,9 @@ const StateFunction = () => {
   useEffect(() => {
     // Update the document title using the browser API
     document.title = `You clicked ${count} times`;
-  });
+    // include a return for any clean up
+  }, [count]); // Only re-run the effect if count changes, which prevents unnecessary re-rendering
+  // [array] should contain all variables in the useEffect
 
     return (
         <>
