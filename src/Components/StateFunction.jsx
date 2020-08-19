@@ -1,10 +1,17 @@
-import React, { useState } from 'react';
+// import { useState } & useEffect hooks
+import React, { useState, useEffect } from 'react';
 
 const StateFunction = () => {
 
     // Note: never directly mutate state!
     // name of state & function to change state
     const [count, setCount] = useState(5); // useState(default value)
+
+      // Effect hooks: like componentDidMount and componentDidUpdate:
+  useEffect(() => {
+    // Update the document title using the browser API
+    document.title = `You clicked ${count} times`;
+  });
 
     return (
         <>

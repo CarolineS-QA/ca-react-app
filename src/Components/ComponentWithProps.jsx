@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import StateFunction from './StateFunction';
 
 // 1. all props... depends on the prop size - use props.propName
 // 2. replace props with ({propName1, propName2}) - use just name
@@ -14,9 +15,10 @@ import PropTypes from 'prop-types';
 
      //Passing a prop with dot notation and {}
       return (
-         <div>
-             <h1>{props.aStringProp}</h1>
-         </div>
+         <section>
+             <h3>{props.aStringProp}</h3>
+             <StateFunction />
+         </section>
      )
  }
 
@@ -29,14 +31,15 @@ aNumberProp: 9001
 // (if not supplied)
 
 // Some devs say this negates the need for TypeScript
+
 ComponentWithProps.propTypes = {
-     propName: PropTypes.string,
-     propName2: PropTypes.func,
-     propName3: PropTypes.objectName({
-     key1: PropTypes.string,
-     key2: PropTypes.number
-//   key3: PropTypes.type
-     })
+//   key: PropTypes.type
+     aStringProp: PropTypes.string,
+    //  propName2: PropTypes.func,
+    //  propName3: PropTypes.objectName({
+    //  key1: PropTypes.string,
+    //  key2: PropTypes.number
+    //  })
 }
 
  export default ComponentWithProps;
