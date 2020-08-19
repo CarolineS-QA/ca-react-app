@@ -3,7 +3,7 @@ import AnotherComponent from './AnotherComponent';
 import MyClassComponent from './MyClassComponent';
 import ComponentWithProps from './ComponentWithProps';
 
-const MyComponent = () => {
+const TopComponent = () => {
     
     const anObject = {
         key1: 'this is an object',
@@ -28,4 +28,4 @@ const MyComponent = () => {
         );
 };
 
-export default MyComponent;
+export default TopComponent;
